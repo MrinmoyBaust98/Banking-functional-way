@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking site</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3 class="text-6xl text-center mt-6 text-yellow-800 "> See your bank Status</h3>
+    </header>
+    <main>
+        <section class="my-10">
+
+            <div class=" grid grid-cols-3 gap-4 w-3/4 mx-auto ">
+
+                <div class=" bg-green-200 p-16 rounded-md font-semibold ">
+                    <h4 class="text-3xl">Deposite</h4>
+                    <span class="text-5xl">$</span><h3 id="deposite-total"  class="text-5xl inline">00</h3>
+                </div>
+
+                <div class="bg-red-300 p-16 rounded-md font-semibold">
+                    <h4 class="text-3xl" >Withdraw</h4>
+                    <span class="text-5xl">$</span><h3 id="withdraw-total"class="text-5xl 
+                     inline">00</h3>
+                </div>
+
+                <div class="bg-blue-800 p-16 rounded-md font-semibold text-white">
+                    <h4 class="text-3xl">Blance</h4>
+                    <span class="text-5xl">$</span><h3 id="total-blance" class="text-5xl 
+                     inline">1200</h3>
+                </div>
+            </div>
+
+            <section class="my-10">
+                <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto" >
+                    <div class="bg-red-100 p-16">
+                        <h3 class="text-3xl py-4"> Deposite Amount</h3>
+                        <input id="deposite-input" type="text" class="border border-gray-400 px-1 py-2 
+                         rounded w- 1/2">
+                        <br>
+                        <button id="deposite-btn" type="submit" class=" block my-4 px-3 py-1.5 rounded-md 
+                         text-white font-bold bg-gradient-to-r from-yellow-400 to-yellow-600"> 
+                        Submit</button>
+                    </div>
+
+                    <div class="bg-yellow-200 p-16">
+                        <h3 class="text-3xl py-4"> Withdraw Amount</h3>
+                        <input id="withdraw-input" type="text" class="border border-gray-400 px-1 py-2 
+                         rounded w-1/2">
+                        <br>
+                        <button id="withdraw-btn" type="submit" class="block my-4 px-3 py-1.5 rounded- 
+                         md text-white font-bold bg-gradient-to-r from-yellow-400 to-yellow-600"> 
+                          Submit</button>
+                    </div>
+                </div>
+
+                    
+                    
+
+                </div>
+            </section>
+            
+        </section>
+    </main>
+    <script src="JS/banking.js"></script>
+</body>
+</html>
